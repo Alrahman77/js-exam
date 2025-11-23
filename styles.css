@@ -88,10 +88,10 @@ input[type="text"]{
 .option input{accent-color:var(--accent)}
 .option label{cursor:pointer}
 .option:hover {
-  background-color: rgba(127, 63, 178, 0.2); /* بنفسجي ناعم */
+  background-color: rgba(191, 132, 224, 0.3); 
   transition: background-color 0.3s ease, transform 0.12s ease, box-shadow 0.12s ease;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(127, 63, 178, 0.15);
+  box-shadow: 0 4px 12px rgba(191, 132, 224, 0.25);
 }
 
 
