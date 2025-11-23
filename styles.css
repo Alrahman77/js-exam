@@ -65,6 +65,7 @@ input[type="text"]{
 }
 .btn.primary{background:linear-gradient(90deg,var(--purple-700),var(--purple-500));color:white;border:none;box-shadow:0 6px 18px rgba(124,58,237,0.12)}
 .btn.ghost{background:transparent;color:var(--purple-700)}
+.btn:hover{background-color: purple;transition: 0.5s ease;
 
 .muted{color:var(--muted)}
 .small{font-size:13px}
