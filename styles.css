@@ -96,13 +96,15 @@ input[type="text"]{
 /* small home media area in intro */
 .home-media{display:flex;justify-content:center;margin:12px 0}
 .home-media img{
-  width: 80%;        
-  max-width: 200px;  
-  height: auto;      
+  width: 100%;       
+  max-width: 200px; 
+  min-width: 120px; 
+  height: auto;     
   object-fit: contain;
   border-radius: 12px;
   background: transparent;
 }
+
 
 /* Responsive tweaks */
 @media (max-width:600px){
