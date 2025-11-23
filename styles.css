@@ -88,11 +88,12 @@ input[type="text"]{
 .option input{accent-color:var(--accent)}
 .option label{cursor:pointer}
 .option:hover {
-  background-color: rgba(191, 132, 224, 0.3); 
+  background-color: rgba(191, 132, 224, 0.15); 
   transition: background-color 0.3s ease, transform 0.12s ease, box-shadow 0.12s ease;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(191, 132, 224, 0.25);
+  box-shadow: 0 4px 12px rgba(191, 132, 224, 0.1);
 }
+
 
 
 /* Option color variants to distribute colors across choices */
