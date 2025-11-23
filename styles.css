@@ -27,6 +27,15 @@ body{
   padding:20px;
 }
 
+.cairo-<uniquifier> {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
 
 /* Layout */
 main{width:100%;max-width:980px}
