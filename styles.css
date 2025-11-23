@@ -81,11 +81,13 @@ input[type="text"]{
 .qtitle{font-weight:700;color:var(--purple-900);font-size:15px}
 .qmeta{font-size:13px;color:var(--muted)}
 .options{display:flex;flex-direction:column;gap:8px;margin-top:6px}
-
+.option{
+  display:flex;align-items:center;gap:10px;padding:10px;border-radius:10px;border:1px solid rgba(124,58,237,0.06);
+  background:white;cursor:pointer;transition:transform .12s ease, box-shadow .12s ease;
+}
 .option input{accent-color:var(--accent)}
 .option label{cursor:pointer}
-
-
+.option:hover{background-color: purple;transition: 0.5s ease;
 
 /* Option color variants to distribute colors across choices */
 .option.variant-0{background:linear-gradient(90deg, rgba(127,63,178,0.06), rgba(111,66,193,0.02));border-color:rgba(127,63,178,0.12)}
