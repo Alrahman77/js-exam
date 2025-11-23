@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JS Basics Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <section id="intro" class="card center">
+      <h1>التجريبي javascript اختبار</h1><br>
+            <h1><span class="sp">خاص فقط بالجروب</span></h1>
+      <p class="muted">أدخل اسمك وقم بإجراء اختبار متعدد الاختيارات مكون من 20 سؤالًا.</p>
+      <div class="home-media">
+        <img src="Picture1.png" alt="mascot" class="imgp"/>
+      </div>
+      <input id="nameInput" type="text" placeholder="Your full name" aria-label="Your name" />
+      <div class="row"><br><br><br>
+        <button id="startBtn" class="btn primary">Start Quiz</button>
+        <button id="sampleBtn" class="btn ghost">Load Sample Questions</button>
+      </div><br>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <header class="card header-row">
+        <div>
+          <strong id="playerName"></strong>
+        </div>
+        <div class="meta">
+          <span id="qCount">0 / 20</span>
+          <button id="submitBtn" class="btn primary" title="Submit quiz (auto calculates when all answers selected)">Submit</button>
+        </div>
+      </header>
+
+      <div id="questionsContainer" class="grid"></div>
+    </section>
+
+    <section id="result" class="card hidden">
+      <h2>Results</h2>
+      <p id="scoreText"></p>
+      <p id="ratingText" class="big"></p>
+      <div id="certificateWrap" class="certWrap">
+        <canvas id="certCanvas" width="800" height="560"></canvas>
+      </div>
+      <div class="row">
+        <button id="downloadBtn" class="btn primary">Download Certificate</button>
+        <button id="copyBtn" class="btn">Copy to Clipboard</button>
+        <button id="retryBtn" class="btn ghost">Retake Quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

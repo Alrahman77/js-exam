@@ -1,0 +1,106 @@
+:root{
+  --bg:#f6f2fb;
+  --card:#ffffff;
+  --purple-900:#2b1055;
+  --purple-700:#5a2a8a;
+  --purple-500:#7f3fb2;
+  --purple-300:#b984e0;
+  --accent:#6c4bd3;
+  --muted:#6b5f7a;
+  --ok:#37b24d;
+  --danger:#e03131;
+  --radius:12px;
+  --glass: rgba(255,255,255,0.6);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body,#app{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg, rgba(124,58,237,0.08) 0%, rgba(111,66,193,0.03) 100%), var(--bg);
+  color:var(--purple-900);
+  -webkit-font-smoothing:antialiased;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+
+/* Layout */
+main{width:100%;max-width:980px}
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow: 0 6px 18px rgba(43,16,85,0.08);
+  border: 1px solid rgba(124,58,237,0.06);
+}
+.sp{color: #7f3fb2;}
+.center{text-align:center}
+.row{display:flex;gap:12px;align-items:center}
+.header-row{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;margin-bottom:12px}
+.meta{display:flex;gap:12px;align-items:center}
+.hidden{display:none}
+
+/* Inputs & buttons */
+input[type="text"]{
+  padding:12px 14px;border-radius:10px;border:1px solid rgba(124,58,237,0.15);width:100%;max-width:420px;
+  outline:none;font-size:15px;background:linear-gradient(180deg, rgba(124,58,237,0.03),transparent);
+}
+.btn{
+  padding:10px 14px;border-radius:10px;border:1px solid rgba(124,58,237,0.12);background:transparent;cursor:pointer;
+  font-weight:600;color:var(--purple-700)
+}
+.btn.primary{background:linear-gradient(90deg,var(--purple-700),var(--purple-500));color:white;border:none;box-shadow:0 6px 18px rgba(124,58,237,0.12)}
+.btn.ghost{background:transparent;color:var(--purple-700)}
+
+.muted{color:var(--muted)}
+.small{font-size:13px}
+
+/* Questions grid */
+.grid{display:flex;flex-direction:column;gap:14px}
+.qcard{
+  padding:14px;border-radius:12px;border:1px solid rgba(124,58,237,0.06);background:linear-gradient(180deg,rgba(111,66,193,0.03),transparent);
+  display:flex;flex-direction:column;gap:10px;
+}
+.qcard + .qcard{margin-top:6px}
+.qhead{display:flex;justify-content:space-between;align-items:center}
+.qtitle{font-weight:700;color:var(--purple-900);font-size:15px}
+.qmeta{font-size:13px;color:var(--muted)}
+.options{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.option{
+  display:flex;align-items:center;gap:10px;padding:10px;border-radius:10px;border:1px solid rgba(124,58,237,0.06);
+  background:white;cursor:pointer;transition:transform .12s ease, box-shadow .12s ease;
+}
+.option input{accent-color:var(--accent)}
+.option label{cursor:pointer}
+
+/* Option color variants to distribute colors across choices */
+.option.variant-0{background:linear-gradient(90deg, rgba(127,63,178,0.06), rgba(111,66,193,0.02));border-color:rgba(127,63,178,0.12)}
+.option.variant-1{background:linear-gradient(90deg, rgba(108,75,211,0.04), rgba(124,58,237,0.02));border-color:rgba(108,75,211,0.12)}
+.option.variant-2{background:linear-gradient(90deg, rgba(191,145,225,0.04), rgba(127,63,178,0.02));border-color:rgba(191,145,225,0.12)}
+.option.variant-3{background:linear-gradient(90deg, rgba(198,173,239,0.03), rgba(124,58,237,0.02));border-color:rgba(198,173,239,0.12)}
+.option:active{transform:translateY(1px)}
+.option input{width:18px;height:18px}
+
+/* placeholder area for images inside question card */
+.qmedia{width:100%;height:120px;border-radius:8px;border:1px dashed rgba(124,58,237,0.12);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px;background:linear-gradient(180deg, rgba(255,255,255,0.6), transparent)}
+
+/* Result */
+#result .big{font-size:20px;font-weight:700}
+.certWrap{display:flex;justify-content:center;padding:12px}
+#certCanvas{border-radius:8px;border:1px solid rgba(43,16,85,0.06);max-width:100%;height:auto;}
+
+/* small home media area in intro */
+.home-media{display:flex;justify-content:center;margin:12px 0}
+.home-media img{width:200px;height:210px;object-fit:contain;border-radius:12px;background:transparent}
+
+/* Responsive tweaks */
+@media (max-width:600px){
+  .grid{grid-template-columns:1fr}
+  .header-row{flex-direction:column;align-items:flex-start;gap:8px}
+  .row{flex-direction:column}
+  input[type="text"]{max-width:100%}
+}
