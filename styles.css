@@ -87,7 +87,13 @@ input[type="text"]{
 }
 .option input{accent-color:var(--accent)}
 .option label{cursor:pointer}
-.option:hover{background-color: purple;transition: 0.5s ease;
+.option:hover {
+  background-color: rgba(127, 63, 178, 0.2); /* بنفسجي ناعم */
+  transition: background-color 0.3s ease, transform 0.12s ease, box-shadow 0.12s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(127, 63, 178, 0.15);
+}
+
 
 /* Option color variants to distribute colors across choices */
 .option.variant-0{background:linear-gradient(90deg, rgba(127,63,178,0.06), rgba(111,66,193,0.02));border-color:rgba(127,63,178,0.12)}
