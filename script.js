@@ -1,26 +1,26 @@
 // Quiz data: replace or edit these 20 questions as needed.
 // Each item: {q: 'question text', choices: ['a','b','c','d'], answer: indexOfCorrectChoice}
 const QUESTIONS = [
-  { q: "1. ما ناتج الكود؟\nconsole.log(\"Hello\" + \" World\");", choices: ["A) HelloWorld", "B) Hello World", "C) \"Hello World\"", "D) Error"], answer: 1 },
-  { q: "2. ما ناتج الكود؟\nlet x = 5;\nlet y = 3;\nconsole.log(x + y);", choices: ["A) 53", "B) 8", "C) 15", "D) Error"], answer: 1 },
-  { q: "3. ما ناتج الكود؟\nlet a = 7;\nlet b = 2;\nconsole.log(a % b);", choices: ["A) 1", "B) 2", "C) 0", "D) 3"], answer: 0 },
-  { q: "4. ما ناتج الكود؟\nconsole.log(Math.max(4, 9, 1));", choices: ["A) 1", "B) 4", "C) 9", "D) Error"], answer: 2 },
-  { q: "5. ما ناتج الكود؟\nlet name = \"Ali\";\nconsole.log(name);", choices: ["A) Ali", "B) \"Ali\"", "C) name", "D) Error"], answer: 0 },
-  { q: "6. ما ناتج الكود؟\nlet x = 10;\nif (x > 5) {\n  console.log(\"Big\");\n} else {\n  console.log(\"Small\");\n}", choices: ["A) Big", "B) Small", "C) Error", "D) Nothing"], answer: 0 },
-  { q: "7. ما ناتج الكود؟\nlet x = 4;\nconsole.log(Math.round(4.6));", choices: ["A) 4", "B) 5", "C) 4.6", "D) Error"], answer: 1 },
-  { q: "8. ما ناتج الكود؟\nfor(let i = 0; i < 3; i++) {\n  console.log(i);\n}", choices: ["A) 0 1 2", "B) 1 2 3", "C) 0 1 2 3", "D) 1 2"], answer: 0 },
-  { q: "9. ما ناتج الكود؟\nlet x = 8;\nif(x % 2 === 0){\n  console.log(\"Even\");\n} else {\n  console.log(\"Odd\");\n}", choices: ["A) Even", "B) Odd", "C) Error", "D) Nothing"], answer: 0 },
-  { q: "10. ما ناتج الكود؟\nlet x = 3;\nlet y = 7;\nconsole.log(Math.min(x, y));", choices: ["A) 3", "B) 7", "C) 10", "D) Error"], answer: 0 },
-  { q: "11. ما ناتج الكود؟\nconsole.log(Math.floor(5.9));", choices: ["A) 5", "B) 6", "C) 5.9", "D) Error"], answer: 0 },
-  { q: "12. ما ناتج الكود؟\nfunction add(a, b){\n  return a + b;\n}\nconsole.log(add(2, 5));", choices: ["A) 7", "B) 25", "C) 2+5", "D) Error"], answer: 0 },
-  { q: "13. ما ناتج الكود؟\nlet x = \"5\";\nlet y = 3;\nconsole.log(x + y);", choices: ["A) 8", "B) 53", "C) \"8\"", "D) Error"], answer: 1 },
-  { q: "14. ما ناتج الكود؟\nlet num = 10;\nif(num < 10){\n  console.log(\"Small\");\n}else if(num === 10){\n  console.log(\"Exact\");\n}else{\n  console.log(\"Big\");\n}", choices: ["A) Small", "B) Exact", "C) Big", "D) Error"], answer: 1 },
-  { q: "15. ما ناتج الكود؟\nfor(let i = 1; i <= 5; i++){\n  console.log(i * 2);\n}", choices: ["A) 2 4 6 8 10", "B) 1 2 3 4 5", "C) 2 4 6 8", "D) 0 2 4 6 8 10"], answer: 0 },
-  { q: "16. ما ناتج الكود؟\nfunction max(a, b){\n  return Math.max(a, b);\n}\nconsole.log(max(4, 9));", choices: ["A) 4", "B) 9", "C) 49", "D) Error"], answer: 1 },
-  { q: "17. ما ناتج الكود؟\nlet x = Math.random();\nif(x < 1){\n  console.log(\"Less than 1\");\n}", choices: ["A) Less than 1", "B) 1", "C) Error", "D) Nothing"], answer: 0 },
-  { q: "18. ما ناتج الكود؟\nlet a = 5;\nlet b = 2;\nconsole.log(a % b + a);", choices: ["A) 2", "B) 7", "C) 6", "D) 5"], answer: 2 },
-  { q: "19. ما ناتج الكود؟\nfunction round(num){\n  return Math.round(num);\n}\nconsole.log(round(4.3));", choices: ["A) 4", "B) 5", "C) 4.3", "D) Error"], answer: 0 },
-  { q: "20. ما ناتج الكود؟\nlet x = 6;\nif(x % 2 === 0 && x > 5){\n  console.log(\"Yes\");\n}else{\n  console.log(\"No\");\n}", choices: ["A) Yes", "B) No", "C) Error", "D) Nothing"], answer: 0 }
+  { q: " ما ناتج الكود؟\nconsole.log(\"Hello\" + \" World\");", choices: ["A) HelloWorld", "B) Hello World", "C) \"Hello World\"", "D) Error"], answer: 1 },
+  { q: " ما ناتج الكود؟\nlet x = 5;\nlet y = 3;\nconsole.log(x + y);", choices: ["A) 53", "B) 8", "C) 15", "D) Error"], answer: 1 },
+  { q: " ما ناتج الكود؟\nlet a = 7;\nlet b = 2;\nconsole.log(a % b);", choices: ["A) 1", "B) 2", "C) 0", "D) 3"], answer: 0 },
+  { q: " ما ناتج الكود؟\nconsole.log(Math.max(4, 9, 1));", choices: ["A) 1", "B) 4", "C) 9", "D) Error"], answer: 2 },
+  { q: " ما ناتج الكود؟\nlet name = \"Ali\";\nconsole.log(name);", choices: ["A) Ali", "B) \"Ali\"", "C) name", "D) Error"], answer: 0 },
+  { q: " ما ناتج الكود؟\nlet x = 10;\nif (x > 5) {\n  console.log(\"Big\");\n} else {\n  console.log(\"Small\");\n}", choices: ["A) Big", "B) Small", "C) Error", "D) Nothing"], answer: 0 },
+  { q: " ما ناتج الكود؟\nlet x = 4;\nconsole.log(Math.round(4.6));", choices: ["A) 4", "B) 5", "C) 4.6", "D) Error"], answer: 1 },
+  { q: " ما ناتج الكود؟\nfor(let i = 0; i < 3; i++) {\n  console.log(i);\n}", choices: ["A) 0 1 2", "B) 1 2 3", "C) 0 1 2 3", "D) 1 2"], answer: 0 },
+  { q: " ما ناتج الكود؟\nlet x = 8;\nif(x % 2 === 0){\n  console.log(\"Even\");\n} else {\n  console.log(\"Odd\");\n}", choices: ["A) Even", "B) Odd", "C) Error", "D) Nothing"], answer: 0 },
+  { q: " ما ناتج الكود؟\nlet x = 3;\nlet y = 7;\nconsole.log(Math.min(x, y));", choices: ["A) 3", "B) 7", "C) 10", "D) Error"], answer: 0 },
+  { q: " ما ناتج الكود؟\nconsole.log(Math.floor(5.9));", choices: ["A) 5", "B) 6", "C) 5.9", "D) Error"], answer: 0 },
+  { q: " ما ناتج الكود؟\nfunction add(a, b){\n  return a + b;\n}\nconsole.log(add(2, 5));", choices: ["A) 7", "B) 25", "C) 2+5", "D) Error"], answer: 0 },
+  { q: " ما ناتج الكود؟\nlet x = \"5\";\nlet y = 3;\nconsole.log(x + y);", choices: ["A) 8", "B) 53", "C) \"8\"", "D) Error"], answer: 1 },
+  { q: " ما ناتج الكود؟\nlet num = 10;\nif(num < 10){\n  console.log(\"Small\");\n}else if(num === 10){\n  console.log(\"Exact\");\n}else{\n  console.log(\"Big\");\n}", choices: ["A) Small", "B) Exact", "C) Big", "D) Error"], answer: 1 },
+  { q: " ما ناتج الكود؟\nfor(let i = 1; i <= 5; i++){\n  console.log(i * 2);\n}", choices: ["A) 2 4 6 8 10", "B) 1 2 3 4 5", "C) 2 4 6 8", "D) 0 2 4 6 8 10"], answer: 0 },
+  { q: " ما ناتج الكود؟\nfunction max(a, b){\n  return Math.max(a, b);\n}\nconsole.log(max(4, 9));", choices: ["A) 4", "B) 9", "C) 49", "D) Error"], answer: 1 },
+  { q: " ما ناتج الكود؟\nlet x = Math.random();\nif(x < 1){\n  console.log(\"Less than 1\");\n}", choices: ["A) Less than 1", "B) 1", "C) Error", "D) Nothing"], answer: 0 },
+  { q: " ما ناتج الكود؟\nlet a = 5;\nlet b = 2;\nconsole.log(a % b + a);", choices: ["A) 2", "B) 7", "C) 6", "D) 5"], answer: 2 },
+  { q: " ما ناتج الكود؟\nfunction round(num){\n  return Math.round(num);\n}\nconsole.log(round(4.3));", choices: ["A) 4", "B) 5", "C) 4.3", "D) Error"], answer: 0 },
+  { q: " ما ناتج الكود؟\nlet x = 6;\nif(x % 2 === 0 && x > 5){\n  console.log(\"Yes\");\n}else{\n  console.log(\"No\");\n}", choices: ["A) Yes", "B) No", "C) Error", "D) Nothing"], answer: 0 }
 ];
 
 const MAX_POINTS = QUESTIONS.length; // 20
